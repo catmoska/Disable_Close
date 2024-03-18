@@ -15,7 +15,7 @@ public class DisableCloseClient implements ClientModInitializer {
 			long handle = client.getWindow().getHandle();
 			GLFW.glfwSetWindowCloseCallback(handle, (window) -> {
 				GLFW.glfwSetWindowShouldClose(window, false);
-				LOGGER.info(" Close");
+				LOGGER.info("Disable Close");
 			});
 		});
 	}
