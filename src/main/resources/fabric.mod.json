@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "disable_close",
+	"version": "${version}",
+	"name": "DisableClose",
+	"description": "Small Mod that disables the \"Close\" button",
+	"authors": [
+		"Catmoska"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/disable_close/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.catmoska.disable_close.DisableClose"
+		],
+		"client": [
+			"com.catmoska.disable_close.DisableCloseClient"
+		]
+	},
+	"mixins": [
+
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
